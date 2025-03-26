@@ -118,18 +118,18 @@
   --color2: #666666;
   --color3: #222222;
   --color4: #f7faff;
-  --color5: #432818;
-  --color6: #DCD0AA;
-  --color7: #432818;
+  --color5: #0d3c74;
+  --color6: #ffffff;
+  --color7: #0d3c74;
   --color8: #3a250f;
   --color9: #402f24;
-  --color10: #432818;
-  --color11: #BB9457;
-  --color12: #432818;
-  --color13: #c7bb99;
-  --color14: #bb9457d6;
-  --color15: #bb9457;
-  --color16: #432818;
+  --color10: #0d3c74;
+  --color11: #0a284b;
+  --color12: #0d3c74;
+  --color13:  #0a284b;
+  --color14: #0a284bd6;
+  --color15: #0a284b;
+  --color16: #0d3c74;
   --transition: all 0.2s cubic-bezier(0.19, 0.68, 0.49, 1.21);
   --transition2: all .3s linear;
   --curve3: 3px;
@@ -4542,7 +4542,7 @@ ul.bottom-links > li:not(:first-child):before {
 .client-review-box > p {line-height: 1.75rem;}
 .client-review-box > p + span {margin-top: 2rem;}
 .client-review-box > span {
-  background-color: #c7bb99;
+  background-color:  #0a284b;
   font-size: 1.0625rem;
   line-height: 1.875rem;
   text-transform: uppercase;
@@ -6210,10 +6210,10 @@ figure > a {
 	font-size:16px;
 }
 .container .get-time-wrap .sec-title-inner > span{
-	color:#432818;
+	color:#0d3c74;
 }
 .team-detail-img .team-detail-info > h3 + span{
-	color:#e3ca94;
+	color:#ffffff;
 }
 /*** 
 
@@ -6226,7 +6226,7 @@ figure > a {
 .sn-main-slider{
 	position:relative;
 	overflow:hidden;
-	background: #DCD0AA;
+	background: #ffffff;
 }
 
 .sn-main-slider .slide{
@@ -6891,7 +6891,7 @@ figure > a {
 	font-weight:600;
 	margin-top:20px;
 	display:inline-block;
-	background-color:#e3ca94;
+	background-color:#ffffff;
 	text-transform:uppercase;
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
@@ -6968,7 +6968,7 @@ figure > a {
 }
 
 .sn-about-block:nth-child(2) .inner-box{
-	background-color:#e3ca94;
+	background-color:#ffffff;
 }
 
 .sn-about-block:nth-child(3) .inner-box{
@@ -7139,7 +7139,7 @@ form.newsletter-form input::placeholder{
 }
 
 .feat-cap > i + span{
-	color:#e3ca94;
+	color:#ffffff;
 }
 .fact-box.v2 i {
     font-size: 60px;
