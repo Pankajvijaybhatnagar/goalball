@@ -6232,7 +6232,7 @@ figure > a {
 .sn-main-slider .slide{
 	position:relative;
 	overflow:hidden;
-	padding:100px 0px 170px;
+	/* padding:100px 0px 170px; */
 }
 
 .sn-main-slider .content-column{
