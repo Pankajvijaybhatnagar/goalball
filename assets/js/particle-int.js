@@ -25,7 +25,7 @@ $(document).ready(function(){
           "type": "circle",
           "stroke": {
             "width": 0,
-            "color": "#000000"
+            "color": "#ffffff000"
           },
           "polygon": {
             "nb_sides": 5
