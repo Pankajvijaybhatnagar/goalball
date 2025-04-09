@@ -1,0 +1,36 @@
+<?php
+$menus = [
+    "Home"=>[
+        "link"=>"",
+        "submenus"=>[],
+    ],
+    "About"=>[
+        "link"=>"about",
+        "submenus"=>[],
+    ],
+    "Rules"=>[
+        "link"=>"rules",
+        "submenus"=>[],
+    ],
+    "Events"=>[
+        "link"=>"events",
+        "submenus"=>[],
+    ],
+    "Players"=>[
+        "link"=>"players",
+        "submenus"=>[],
+    ],
+    "Involvement"=>[
+        "link"=>"involvement",
+        "submenus"=>[],
+    ],
+    "Gallery"=>[
+        "link"=>"gallery",
+        "submenus"=>[],
+    ],
+    "Contact"=>[
+        "link"=>"contact",
+        "submenus"=>[],
+    ],
+    
+];
