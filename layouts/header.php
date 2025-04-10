@@ -83,9 +83,19 @@
                             <div class="header-left">
                                 <ul class="mb-0 list-unstyled d-inline-flex">
                                     <?php
-                                        foreach ($menus as $key => $value) {
-                                            echo '<li class=""><a href="'.$value['link'].'" title="">'.$key.'</a>';
+                                    foreach ($menus as $key => $value) {
+                                        echo '<li class="menu-item' . (!empty($value['submenus']) ? '-has-children' : '') . '"><a href="' . $value['link'] . '" title="">' . $key . '</a>';
+                                        
+                                        if (!empty($value['submenus'])) {
+                                            echo '<ul class="mb-0 list-unstyled">';
+                                            foreach ($value['submenus'] as $submenuKey => $submenuValue) {
+                                                echo '<li><a href="' . $submenuValue['link'] . '" title="">' . $submenuKey . '</a></li>';
+                                            }
+                                            echo '</ul>';
                                         }
+                                        
+                                        echo '</li>';
+                                    }
                                     ?>
                                     <!-- <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Home</a> -->
 
@@ -118,10 +128,20 @@
                     <nav class="d-flex flex-wrap align-items-center justify-content-between">
                         <div class="header-left">
                             <ul class="mb-0 list-unstyled d-inline-flex">
-                                <?php
-                                        foreach ($menus as $key => $value) {
-                                            echo '<li class=""><a href="'.$value['link'].'" title="">'.$key.'</a>';
+                            <?php
+                                    foreach ($menus as $key => $value) {
+                                        echo '<li class="menu-item' . (!empty($value['submenus']) ? '-has-children' : '') . '"><a href="' . $value['link'] . '" title="">' . $key . '</a>';
+                                        
+                                        if (!empty($value['submenus'])) {
+                                            echo '<ul class="mb-0 list-unstyled">';
+                                            foreach ($value['submenus'] as $submenuKey => $submenuValue) {
+                                                echo '<li><a href="' . $submenuValue['link'] . '" title="">' . $submenuKey . '</a></li>';
+                                            }
+                                            echo '</ul>';
                                         }
+                                        
+                                        echo '</li>';
+                                    }
                                     ?>
                             </ul>
                         </div>
@@ -161,11 +181,21 @@
             <div class="rsnp-mnu">
                 <span class="rspn-mnu-cls"><i class="fa fa-times"></i></span>
                 <ul class="mb-0 list-unstyled w-100">
-                    <?php
-                        foreach ($menus as $key => $value) {
-                            echo '<li class=""><a href="'.$value['link'].'" title="">'.$key.'</a>';
-                        }
-                    ?>
+                <?php
+                                    foreach ($menus as $key => $value) {
+                                        echo '<li class="menu-item' . (!empty($value['submenus']) ? '-has-children' : '') . '"><a href="' . $value['link'] . '" title="">' . $key . '</a>';
+                                        
+                                        if (!empty($value['submenus'])) {
+                                            echo '<ul class="mb-0 list-unstyled">';
+                                            foreach ($value['submenus'] as $submenuKey => $submenuValue) {
+                                                echo '<li><a href="' . $submenuValue['link'] . '" title="">' . $submenuKey . '</a></li>';
+                                            }
+                                            echo '</ul>';
+                                        }
+                                        
+                                        echo '</li>';
+                                    }
+                                    ?>
                 </ul>
             </div><!-- Responsive Menu -->
         </div><!-- Responsive Header -->
