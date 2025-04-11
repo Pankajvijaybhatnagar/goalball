@@ -75,7 +75,7 @@ include "layouts/header.php";
                     </div>
                     <div class="col-md-12 col-sm-12 col-lg-6">
                         <div class="about-desc w-100">
-                            <span class="thm-clr d-inline-block">STEPS TOWARDS PROFESSIONAL TRAINING</span>
+                            <span class="thm-clr d-inline-block">STEPS of TOWARDS PROFESSIONAL TRAINING</span>
                             <h2 class="mb-0"> 20+ Years <span> of Experience in Horse Riding </span> Training </h2>
                             <strong>Ut enim adminim veniam, quis nostru exercitation ullamco lorem ipsum. Excepteur sint
                                 occaecat cupidatat.</strong>

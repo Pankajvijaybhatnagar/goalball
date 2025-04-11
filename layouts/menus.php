@@ -54,8 +54,8 @@ $menus = [
         "link" => "support",
         "submenus" => [],
     ],
-    "Gallery" => [
-        "link" => "gallery",
+    "Media" => [
+        "link" => "media",
         "submenus" => [],
     ],
     "Contact" => [
