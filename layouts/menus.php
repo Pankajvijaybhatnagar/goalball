@@ -46,8 +46,8 @@ $menus = [
         "link" => "events",
         "submenus" => [],
     ],
-    "Atheletes" => [
-        "link" => "atheletes",
+    "Athletes" => [
+        "link" => "athletes",
         "submenus" => [],
     ],
     "Support" => [
