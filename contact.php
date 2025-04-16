@@ -32,8 +32,7 @@ include "layouts/header.php";
             <div class="sec-title3 text-center w-100">
                 <div class="sec-title3-inner d-inline-block">
                     <h3 class="mb-0">Contact Information</h3>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt
-                        ut labore et dolore magna aliqua invideo miror magis.</p>
+                    
                 </div>
             </div>
             <div class="contact-info-wrap text-center position-relative w-100">
@@ -41,16 +40,15 @@ include "layouts/header.php";
                     <div class="col-md-4 col-sm-6 col-lg-4">
                         <div class="contact-info-box position-relative w-100">
                             <i class="fas fa-envelope-open brd-rd10 d-inline-block scndry-clr"></i>
-                            <span class="d-block"><a href="mailto:info@nauthemes.com"
-                                    title="">info@nauthemes.com</a></span>
-                            <span class="d-block"><a href="mailto:admin@nauthemes.com"
-                                    title="">admin@nauthemes.com</a></span>
+                            <span class="d-block"><a href="mailto:info@goalballindia.com"
+                                    title="">info@goalballindia.com</a></span>
+                           
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-lg-4">
                         <div class="contact-info-box position-relative w-100">
                             <i class="fas fa-home brd-rd10 d-inline-block scndry-clr"></i>
-                            <p class="mb-0">503 Old Buffalo Street <br> Northwest #205, New York-3087.</p>
+                            <p class="mb-0">630/B, Jyoti Nagar <br> Jagadhri-135003, Yamunanagar (HRY)</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-lg-4">
@@ -105,38 +103,7 @@ include "layouts/header.php";
         </div>
     </div>
 </section>
-<section>
-    <div class="w-100 pt-55 pb-55 position-relative">
-        <div class="container">
-            <ul class="spnsr-list d-flex flex-wrap justify-content-center align-items-center list-unstyled w-100">
-                <li>
-                    <div class="spnsr-box text-center w-100">
-                        <a href="javascript:void(0);" title=""><img class="img-fluid"
-                                src="assets/images/resources/spnsr-img1-1.png" alt="Sponsor Image 1"></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="spnsr-box text-center w-100">
-                        <a href="javascript:void(0);" title=""><img class="img-fluid"
-                                src="assets/images/resources/spnsr-img1-2.png" alt="Sponsor Image 2"></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="spnsr-box text-center w-100">
-                        <a href="javascript:void(0);" title=""><img class="img-fluid"
-                                src="assets/images/resources/spnsr-img1-3.png" alt="Sponsor Image 3"></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="spnsr-box text-center w-100">
-                        <a href="javascript:void(0);" title=""><img class="img-fluid"
-                                src="assets/images/resources/spnsr-img1-4.png" alt="Sponsor Image 4"></a>
-                    </div>
-                </li>
-            </ul><!-- Sponsors List -->
-        </div>
-    </div>
-</section>
+
 
 
 
