@@ -150,7 +150,7 @@ include "layouts/header.php";
                                             <a class="position-absolute" href="#" title=""><i class="fas fa-plus"></i></a>
                                         </div>
                                         <div class="serv-info2 w-100 position-absolute">
-                                            <h3 class="mb-0"><a href="#" title="">National Training Camps</a></h3>
+                                            <h3 class="mb-0"><a href="#" title="">Thailand Championship</a></h3>
                                         </div>
                                     </div>
                                 </div>
