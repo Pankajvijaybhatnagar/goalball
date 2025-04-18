@@ -4,22 +4,23 @@ header('Content-Type: application/json');
 // Get POST data
 $folder = isset($_POST['folder']) ? rtrim($_POST['folder'], '/') . '/' : null;
 $start = isset($_POST['start']) ? intval($_POST['start']) : 0;
-$limit = isset($_POST['limit']) ? intval($_POST['limit']) : null;
+$limit = isset($_POST['limit']) ? intval($_POST['limit']) : 10;
+
+ $folder = "../uploads/".$folder;
 
 // Valid image extensions
 $image_extensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp'];
 
 // Validate folder parameter
-if (!$folder || !is_dir("../uploads/".$folder)) {
+if (!$folder || !is_dir($folder)) {
     echo json_encode([
-        'error' => 'Valid folder path must be provided.',
-        'rolder'=>$folder;
+        'error' => 'Valid folder path must be provided.'
     ]);
     exit;
 }
 
 // Scan the folder
-$files = scandir("../uploads/".$folder);
+$files = scandir($folder);
 $images = [];
 
 // Filter image files
@@ -42,6 +43,7 @@ echo json_encode([
     'start' => $start,
     'limit' => $limit,
     'total' => count($images),
-    'images' => $selected_images
+    'images' => $selected_images,
+
 ]);
 ?>
