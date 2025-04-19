@@ -36,7 +36,7 @@
                                     <div class="widget-box v2 w-100">
                                         <h4 class="widget-title2 position-relative"><i class="fas fa-trophy thm-clr position-absolute"></i>Information</h4>
                                         <ul class="contact-info-list mb-0 list-unstyled w-100">
-                                            <li><span>Phone:</span>+123 456 7890</li>
+                                            <li><span>Phone:</span>+91 9892929551</li>
                                             <li><span>Mail Id:</span><a href="mailto:info@goalballindia.com" title="">info@goalballindia.com</a></li>
                                             <li>India</li>
                                         </ul>
@@ -57,13 +57,13 @@
                     <div class="bottom-bar v3 w-100">
                         <div class="container">
                             <div class="bottom-bar-inner d-flex flex-wrap align-items-center justify-content-between w-100">
-                                <p class="mb-0"><a href="index.html" title="jocey"></a> Copyright © 2024 | Goalballindia.in</p>
+                                <p class="mb-0"><a href="index.html" title="jocey"></a> Copyright © 2025 | Goalballindia.in</p>
                                 <div class="social-links3 d-flex flex-wrap align-items-center">
                                     <h3 class="mb-0">Follow Us</h3>
-                                    <a class="brd-rd5 twitter-hvr" href="https://twitter.com/" title="Twtiiter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                    <a class="brd-rd5 facebook-hvr" href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="brd-rd5 youtube-hvr" href="https://www.youtube.com/" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
-                                    <a class="brd-rd5 linkedin-hvr" href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    
+                                    <a class="brd-rd5 facebook-hvr" href="https://www.facebook.com/Goalballgfi" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="brd-rd5 youtube-hvr" href="https://www.instagram.com/goalballindia" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    
                                 </div>
                             </div>
                         </div>
