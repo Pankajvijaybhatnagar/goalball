@@ -48,7 +48,7 @@
                 <div class="container">
                     <div class="topbar-inner d-flex flex-wrap align-items-center justify-content-between w-100">
                         <div class="header-contact position-relative"><i
-                                class="fas fa-phone position-absolute"></i>+911234567890</div>
+                                class="fas fa-phone position-absolute"></i>+91 9892929551</div>
                         <div class="topbar-right d-inline-flex align-items-center flex-wrap">
                             <ul class="top-links mb-0 list-unstyled d-inline-flex align-items-center flex-wrap">
                                 <li><a href="#" title="">Training</a></li>
@@ -174,7 +174,7 @@
                 <div class="rspn-cnt">
                     <span><i class="thm-clr far fa-envelope"></i><a href="mailto:info@youremailid.com"
                             title="">info@youremailid.com</a></span>
-                    <span><i class="thm-clr fas fa-phone-alt"></i>+911234567890</span>
+                    <span><i class="thm-clr fas fa-phone-alt"></i>+91 9892929551</span>
                 </div>
                 <span class="rspn-mnu-btn"><i class="fa fa-list-ul"></i></span>
             </div>

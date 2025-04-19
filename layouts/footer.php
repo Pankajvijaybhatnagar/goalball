@@ -37,7 +37,7 @@
                                         <h4 class="widget-title2 position-relative"><i class="fas fa-trophy thm-clr position-absolute"></i>Information</h4>
                                         <ul class="contact-info-list mb-0 list-unstyled w-100">
                                             <li><span>Phone:</span>+123 456 7890</li>
-                                            <li><span>Mail Id:</span><a href="mailto:info@example.com" title="">info@example.com</a></li>
+                                            <li><span>Mail Id:</span><a href="mailto:info@goalballindia.com" title="">info@goalballindia.com</a></li>
                                             <li>India</li>
                                         </ul>
                                     </div>
