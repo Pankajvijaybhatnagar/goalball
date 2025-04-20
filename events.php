@@ -4,8 +4,6 @@
 include "layouts/header.php";
 ?>
 
-<<<<<<< HEAD
-=======
 <?php
 // Event Data Array (you can fetch from DB later if needed)
 $events = [
@@ -139,7 +137,6 @@ $events = [
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
->>>>>>> second
 
 
 

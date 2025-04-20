@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-
-
-<?php
-include "layouts/header.php";
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
-include 'layouts/footer.php';
-?>
-=======
 <?php include "layouts/header.php"; ?>
 
 <section>
@@ -28,10 +6,10 @@ include 'layouts/footer.php';
         <div class="container">
             <div class="page-title-wrap text-center w-100">
                 <div class="page-title-inner d-inline-block">
-                    <h1 class="mb-0">Gallery Style 3</h1>
+                    <h1 class="mb-0">Gallery/Media </h1>
                     <ol class="breadcrumb mb-0 justify-content-center">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Gallery Style 3</li>
+                        <li class="breadcrumb-item"><a href="./">Home</a></li>
+                        <li class="breadcrumb-item ">Gallery</li>
                     </ol>
                 </div>
             </div>
@@ -114,4 +92,3 @@ $(document).ready(function() {
     });
 });
 </script>
->>>>>>> second
