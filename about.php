@@ -17,7 +17,11 @@ include "layouts/header.php";
                 <div class="page-title-inner d-inline-block">
                     <h1 class="mb-0">About Us</h1>
                     <ol class="breadcrumb mb-0 justify-content-center">
+<<<<<<< HEAD
                         <li class="breadcrumb-item"><a href="index" title="">Home</a></li>
+=======
+                        <li class="breadcrumb-item"><a href="index.html" title="">Home</a></li>
+>>>>>>> second
                         <li class="breadcrumb-item active">About Us</li>
                     </ol>
                 </div>
@@ -25,6 +29,7 @@ include "layouts/header.php";
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 
 
 
@@ -129,6 +134,8 @@ include "layouts/header.php";
 
 
 
+=======
+>>>>>>> second
 <section>
     <div class="w-100 pt-100 gray-layer opc95 pb-100 position-relative">
         <div class="fixed-bg" style="background-image: url(assets/images/parallax-bg6.jpg);"></div>

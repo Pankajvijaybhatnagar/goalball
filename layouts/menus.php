@@ -1,6 +1,7 @@
 <?php
 $menus = [
     "Home" => [
+<<<<<<< HEAD
         "link" => "",
         "submenus" => [],
     ],
@@ -17,11 +18,30 @@ $menus = [
             ],
             "Leadership Team" => [
                 "link" => "about#leadership",
+=======
+        "link" => "index",
+        "submenus" => [],
+    ],
+    "About" => [
+        "link" => "index",
+        "submenus" => [
+            "Mission & Vision" => [
+                "link" => "index",
+                "description" => "Learn about our mission and vision for the future.",
+            ],
+            "History" => [
+                "link" => "index",
+                "description" => "Discover the history of Goalball and its evolution.",
+            ],
+            "Leadership Team" => [
+                "link" => "index",
+>>>>>>> second
                 "description" => "Meet our dedicated leadership team.",
             ],
         ],
     ],
     "Governance" => [
+<<<<<<< HEAD
         "link" => "governance",
         "submenus" => [
             "How to Play Goalball" => [
@@ -38,6 +58,24 @@ $menus = [
             ],
             "FAQs" => [
                 "link" => "governance#faqs",
+=======
+        "link" => "",
+        "submenus" => [
+            "How to Play Goalball" => [
+                "link" => "play",
+                "description" => "A comprehensive manual on the rules of Goalball.",
+            ],
+            "Training Resources" => [
+                "link" => "training",
+                "description" => "Access various training materials and resources.",
+            ],
+            "Equipment & Court Setup" => [
+                "link" => "equipment",
+                "description" => "Guidelines for equipment and court setup.",
+            ],
+            "FAQs" => [
+                "link" => "faq",
+>>>>>>> second
                 "description" => "Frequently asked questions about Goalball.",
             ],
         ],

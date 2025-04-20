@@ -32,7 +32,11 @@ include "layouts/header.php";
             <div class="sec-title3 text-center w-100">
                 <div class="sec-title3-inner d-inline-block">
                     <h3 class="mb-0">Contact Information</h3>
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> second
                 </div>
             </div>
             <div class="contact-info-wrap text-center position-relative w-100">
@@ -42,7 +46,11 @@ include "layouts/header.php";
                             <i class="fas fa-envelope-open brd-rd10 d-inline-block scndry-clr"></i>
                             <span class="d-block"><a href="mailto:info@goalballindia.com"
                                     title="">info@goalballindia.com</a></span>
+<<<<<<< HEAD
 
+=======
+                           
+>>>>>>> second
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-lg-4">
@@ -54,18 +62,34 @@ include "layouts/header.php";
                     <div class="col-md-4 col-sm-6 col-lg-4">
                         <div class="contact-info-box position-relative w-100">
                             <i class="fas fa-phone-alt brd-rd10 d-inline-block scndry-clr"></i>
+<<<<<<< HEAD
                             <span class="d-block">+91 9892929551</span>
 
+=======
+                            <span class="d-block">+2 365 352 2541</span>
+                            <span class="d-block">+2 365 352 2523</span>
+>>>>>>> second
                         </div>
                     </div>
                 </div>
             </div><!-- Contact Info Wrap -->
             <div class="social-links3 v2 mb-05 d-flex flex-wrap justify-content-center align-items-center w-100">
                 <h3 class="mb-0">Contact Us Via:</h3>
+<<<<<<< HEAD
                 <a class="brd-rd5 facebook-hvr" href="https://www.facebook.com/Goalballgfi" title="Facebook"
                     target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a class="brd-rd5 youtube-hvr" href="https://www.instagram.com/goalballindia" title="instagram"
                     target="_blank"><i class="fab fa-instagram"></i></a>
+=======
+                <a class="brd-rd5 twitter-hvr" href="https://twitter.com/" title="Twtiiter" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="brd-rd5 facebook-hvr" href="https://www.facebook.com/" title="Facebook" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="brd-rd5 youtube-hvr" href="https://www.youtube.com/" title="Youtube" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a class="brd-rd5 linkedin-hvr" href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+>>>>>>> second
             </div>
         </div>
     </div>
