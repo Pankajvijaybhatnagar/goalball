@@ -51,19 +51,20 @@
                                 class="fas fa-phone position-absolute"></i>+91 9892929551</div>
                         <div class="topbar-right d-inline-flex align-items-center flex-wrap">
                             <ul class="top-links mb-0 list-unstyled d-inline-flex align-items-center flex-wrap">
-                                <li><a href="#" title="">Training</a></li>
+                                <!-- <li><a href="#" title="">Training</a></li>
                                 <li><a href="#" title="">Services</a></li>
-                                <li><a href="#" title="">Campus</a></li>
+                                <li><a href="#" title="">Campus</a></li> -->
                             </ul>
-                            <div class="social-links d-inline-flex">
-                                <a href="https://twitter.com/" title="Twtiiter" target="_blank"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i
+                            <div  class="social-links d-inline-flex">
+                                <span style="color:white">
+
+                                    Follow us on : 
+                                </span>
+                                <a href="https://www.facebook.com/Goalballgfi" title="Facebook" target="_blank"><i
                                         class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.youtube.com/" title="Youtube" target="_blank"><i
-                                        class="fab fa-youtube"></i></a>
-                                <a href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i
-                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/goalballindia" title="instagram" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                
                             </div>
                             <!-- <a class="search-btn d-inline-block position-relative" href="javascript:void(0);" title=""><i class="fas fa-search"></i></a> -->
                         </div>

@@ -3,7 +3,7 @@ include "layouts/header.php";
 ?>
 
 <style>
-    form{
+    .form-container{
         display:flex;
         flex-wrap:wrap;
         gap: 10px;
@@ -14,9 +14,27 @@ include "layouts/header.php";
     #goalball-registration{
         margin:30px auto;
     }
+    h3{
+        margin: 10px auto;
+    }
 </style>
 
-
+<section>
+    <div class="w-100 pt-100 black-layer opc5 pb-80 position-relative">
+        <div class="fixed-bg" style="background-image: url(assets/images/pag-top-bg.jpg);"></div>
+        <div class="container">
+            <div class="page-title-wrap text-center w-100">
+                <div class="page-title-inner d-inline-block">
+                    <h1 class="mb-0">About Us</h1>
+                    <ol class="breadcrumb mb-0 justify-content-center">
+                        <li class="breadcrumb-item"><a href="index" title="">Home</a></li>
+                        <li class="breadcrumb-item ">Athletes</li>
+                    </ol>
+                </div>
+            </div><!-- Page Title Wrap -->
+        </div>
+    </div>
+</section>
 <section id="goalball-registration">
     <div class="container">
         <div class="row">
@@ -34,6 +52,7 @@ include "layouts/header.php";
                 <div id="athlete-registration-form" class="goalball-form" style="display:none;">
                     <h3>Goalball Athlete Registration Form</h3>
                     <form id="athlete-form" enctype="multipart/form-data">
+                        <div class="form-container">
                         <div class="form-group">
                             <label for="full-name">Full Name</label>
                             <input type="text" class="form-control" id="full-name" name="full_name" required>
@@ -96,7 +115,15 @@ include "layouts/header.php";
                             <input type="file" class="form-control" id="passport-photo" name="passport_photo"
                                 accept=".jpg,.jpeg,.png" required>
                         </div>
-                        <div class="form-group form-check">
+                        </div>
+                        <div style="
+                        display:flex;
+                        margin:10px auto;
+                        margin: 10px auto;
+
+                        padding: 0;
+                        flex-direction: column;
+                        " class="form-group form-check ">
                             <input type="checkbox" class="form-check-input" id="declaration-athlete" required>
                             <label class="form-check-label" for="declaration-athlete">I confirm that the information
                                 provided is true and I am willing to participate under the rules of Goalball Federation
@@ -110,6 +137,8 @@ include "layouts/header.php";
                 <div id="volunteer-registration-form" class="goalball-form" style="display:none;">
                     <h3>Goalball Volunteer Registration Form</h3>
                     <form id="volunteer-form" enctype="multipart/form-data">
+                        <div class="form-container">
+                            
                         <div class="form-group">
                             <label for="volunteer-name">Full Name</label>
                             <input type="text" class="form-control" id="volunteer-name" name="volunteer_name" required>
@@ -158,7 +187,15 @@ include "layouts/header.php";
                                 <option value="As Needed">As Needed</option>
                             </select>
                         </div>
-                        <div class="form-group form-check">
+                        </div>
+                        <div style="
+                        display:flex;
+                        margin:10px auto;
+                        margin: 10px auto;
+
+                        padding: 0;
+                        flex-direction: column;
+                        " class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="declaration-volunteer" required>
                             <label class="form-check-label" for="declaration-volunteer">I agree to volunteer with the
                                 Goalball Federation of India and follow all instructions given during the
@@ -172,6 +209,8 @@ include "layouts/header.php";
                 <div id="support-sponsorship-form" class="goalball-form" style="display:none;">
                     <h3>Support & Sponsorship Form</h3>
                     <form id="support-form" enctype="multipart/form-data">
+                        <div class="form-container">
+                            
                         <div class="form-group">
                             <label for="support-name">Full Name / Organization Name</label>
                             <input type="text" class="form-control" id="support-name" name="support_name" required>
@@ -215,9 +254,17 @@ include "layouts/header.php";
                         <div class="form-group">
                             <label for="support-message">Message</label>
                             <textarea class="form-control" id="support-message" name="support_message"
-                                rows="3"></textarea>
+                                rows="1"></textarea>
                         </div>
-                        <div class="form-group form-check">
+                        </div>
+                        <div style="
+                        display:flex;
+                        margin:10px auto;
+                        margin: 10px auto;
+
+                        padding: 0;
+                        flex-direction: column;
+                        " class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="declaration-support" required>
                             <label class="form-check-label" for="declaration-support">I/we are interested in supporting
                                 the Goalball Federation of India and look forward to further discussion.</label>
