@@ -52,7 +52,16 @@ $menus = [
     ],
     "Support" => [
         "link" => "support",
-        "submenus" => [],
+        "submenus" => [
+            "Join Us" => [
+                "link" => "./support",
+                "description" => "A comprehensive manual on the rules of Goalball.",
+            ],
+            "Donation" => [
+                "link" => "./donation",
+                "description" => "A comprehensive manual on the rules of Goalball.",
+            ],
+        ],
     ],
     "Media" => [
         "link" => "media",

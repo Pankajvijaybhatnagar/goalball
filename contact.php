@@ -32,11 +32,6 @@ include "layouts/header.php";
             <div class="sec-title3 text-center w-100">
                 <div class="sec-title3-inner d-inline-block">
                     <h3 class="mb-0">Contact Information</h3>
-<<<<<<< HEAD
-
-=======
-                    
->>>>>>> second
                 </div>
             </div>
             <div class="contact-info-wrap text-center position-relative w-100">
@@ -44,8 +39,8 @@ include "layouts/header.php";
                     <div class="col-md-4 col-sm-6 col-lg-4">
                         <div class="contact-info-box position-relative w-100">
                             <i class="fas fa-envelope-open brd-rd10 d-inline-block scndry-clr"></i>
-                            <span class="d-block"><a href="mailto:info@goalballindia.com"
-                                    title="">info@goalballindia.com</a></span>
+                            <span class="d-block"><a href="mailto:info@goalballindia.in"
+                                    title="">info@goalballindia.in</a></span>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-lg-4">
@@ -84,20 +79,68 @@ include "layouts/header.php";
                 </div>
             </div>
             <div class="contact-form d-flex flex-wrap justify-content-center text-center w-100">
-                <form class="w-100" id="email-form">
+                <form class="w-100" id="contact-us-form">
                     <div class="response w-100"></div>
-                    <div class="field-box w-100"><input class="brd-rd10 fname" type="text" name="fname"
-                            placeholder="Full Name" required></div>
-                    <div class="field-box w-100"><input class="brd-rd10 email" type="email" name="email"
-                            placeholder="Email" required></div>
-                    <div class="field-box w-100"><input class="brd-rd10 subject" type="tel" name="subject"
-                            placeholder="Subject" required></div>
-                    <div class="field-box w-100"><textarea class="brd-rd10 contact_message" name="contact_message"
-                            placeholder="Comments" required></textarea></div>
-                    <div class="btn-box w-100"><button
-                            class="thm-btn scndry-bg brd-rd10 position-relative overflow-hidden" type="submit"
-                            id="submit">Contact Us Now</button></div>
+
+                    <!-- Your Details -->
+                    <!-- <div class="section-title">Your Details</div> -->
+
+                    <div class="field-box w-100">
+                        <input class="brd-rd10 fname" type="text" name="fname" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="field-box w-100">
+                        <input class="brd-rd10 email" type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="field-box w-100">
+                        <input class="brd-rd10 mobile" type="tel" name="mobile" placeholder="Mobile Number (Optional)">
+                    </div>
+
+                    <div class="field-box w-100">
+                        <input class="brd-rd10 city-state" type="text" name="city_state" placeholder="City & State"
+                            required>
+                    </div>
+
+                    <!-- Inquiry Type -->
+                    <!-- <div class="section-title">Inquiry Type</div>
+
+                    <div class="field-box w-100">
+                        <select class="brd-rd10 inquiry-type" name="inquiry_type" required>
+                            <option value="general_inquiry">General Inquiry</option>
+                            <option value="athlete_registration">Athlete Registration</option>
+                            <option value="volunteering">Volunteering</option>
+                            <option value="sponsorship_csr">Sponsorship/CSR</option>
+                            <option value="media_press">Media/Press</option>
+                            <option value="other">Other (Please specify)</option>
+                        </select>
+                    </div> -->
+
+                    <!-- Your Message -->
+                    <!-- <div class="section-title">Your Message</div> -->
+
+                    <div class="field-box w-100">
+                        <textarea class="brd-rd10 message" name="message"
+                            placeholder="Message / Question / Request (Max 1000 characters)" maxlength="1000"
+                            required></textarea>
+                    </div>
+
+                    <!-- Declaration (Optional) -->
+                    <div class="field-box w-100">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="declaration" value="agree" class="brd-rd1">
+                            I agree to be contacted by the Goalball Federation of India regarding this inquiry.
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="btn-box w-100">
+                        <button class="thm-btn scndry-bg brd-rd10 position-relative overflow-hidden" type="submit"
+                            id="submit">Submit Inquiry</button>
+                    </div>
                 </form>
+
+
             </div><!-- Contact Form -->
         </div>
     </div>
