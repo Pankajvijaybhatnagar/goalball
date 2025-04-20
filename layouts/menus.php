@@ -22,7 +22,7 @@ $menus = [
         ],
     ],
     "Governance" => [
-        "link" => "",
+        "link" => "javascript:void(0);",
         "submenus" => [
             "How to Play Goalball" => [
                 "link" => "play",

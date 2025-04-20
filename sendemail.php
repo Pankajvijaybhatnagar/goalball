@@ -10,7 +10,7 @@ if(isset($_POST["fname"])) {
 	$message = isset( $_POST['contact_message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['contact_message'] ) : "";
 	
 	//Headers
-	$to = "aizaz@gmail.com";
+	$to = "ankitbkana@gmail.com";
     $subject = 'Contact Us';
 	$headers  = 'From: Your name <ayyaz@gmail.com>' . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
