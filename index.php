@@ -150,11 +150,7 @@ include "layouts/header.php";
                                             <a class="position-absolute" href="#" title=""><i class="fas fa-plus"></i></a>
                                         </div>
                                         <div class="serv-info2 w-100 position-absolute">
-<<<<<<< HEAD
-                                            <h3 class="mb-0"><a href="#" title="">National Training Camps</a></h3>
-=======
                                             <h3 class="mb-0"><a href="#" title="">Thailand Championship</a></h3>
->>>>>>> second
                                         </div>
                                     </div>
                                 </div>
@@ -162,10 +158,10 @@ include "layouts/header.php";
                                     <div class="serv-box2 v2 position-relative w-100">
                                         <div class="serv-img2 brd-rd10 position-relative overflow-hidden w-100">
                                             <img class="img-fluid w-100" src="assets/images/resources/serv-img2-2.jpg" alt="National Tournaments">
-                                            <a class="position-absolute" href="tournaments.html" title=""><i class="fas fa-plus"></i></a>
+                                            <a class="position-absolute" href="" title=""><i class="fas fa-plus"></i></a>
                                         </div>
                                         <div class="serv-info2 w-100 position-absolute">
-                                            <h3 class="mb-0"><a href="tournaments.html" title="">National Goalball Tournaments</a></h3>
+                                            <h3 class="mb-0"><a href="" title="">National Goalball Tournaments</a></h3>
                                         </div>
                                     </div>
                                 </div>
