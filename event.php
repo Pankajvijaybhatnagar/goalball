@@ -2,7 +2,20 @@
 
 <?php
 include "layouts/header.php";
-$slug = isset($_GET['slug']) ?$_GET['slug']:null;
+include "parts/_db.php";
+$slug = isset($_GET['e']) ?$_GET['e']:null;
+
+
+$sql = "SELECT * FROM `events` WHERE slug= '$slug'";
+$res=$conn->query($sql);
+
+if($res->num_rows>0){
+$row = $res->fetch_assoc();
+}else{
+    $slug=null;
+    $row=null;
+}
+
 ?>
 <section>
     <div class="w-100 pt-100 black-layer opc5 pb-80 position-relative">
@@ -20,6 +33,7 @@ $slug = isset($_GET['slug']) ?$_GET['slug']:null;
         </div>
     </div>
 </section>
+
 
 
 

@@ -45,16 +45,16 @@ $res=$conn->query($sql);
                     <div class="col-md-6 col-sm-6 col-lg-4">
                         <div class="news-box2 brd-rd10 position-relative overflow-hidden w-100">
                             <div class="news-img2 position-relative overflow-hidden w-100">
-                                <a href="blog-detail.html" title=""><img class="img-fluid w-100"
+                                <a href="event?e=<?php echo $rows['slug'] ?>" title=""><img class="img-fluid w-100"
                                         src="assets/images/resources/<?php echo $rows['featured_image'] ?>" title="News Image 1"></a>
                             </div>
                             <div class="news-info2 brd-rd10 bg-color6 position-relative w-100">
                                
-                                <h3 class="mb-0"><a href="blog-detail.html" title=""><?php echo strtoupper( $rows['title'])  ?></a></h3>
+                                <h3 class="mb-0"><a href="event?e=<?php echo $rows['slug'] ?>" title=""><?php echo strtoupper( $rows['title'])  ?></a></h3>
                                 <h6>at <?php echo $rows['place']  ?></h6>
                                 <ul class="meta mb-0 list-unstyled d-flex flex-wrap w-100">
-                                    <li class="scndry-clr"><a href="archive.html" title=""><?php echo date("F j, Y", strtotime($rows['from_date']));  ?></a></li>
-                                    <li><a href="archive.html" title="">Read more -></a></li>
+                                    <li class="scndry-clr"><a href="event?e=<?php echo $rows['slug'] ?>" title=""><?php echo date("F j, Y", strtotime($rows['from_date']));  ?></a></li>
+                                    <li><a href="event?e=<?php echo $rows['slug'] ?>" title="">Read more -></a></li>
                                 </ul>
                             </div>
                         </div>

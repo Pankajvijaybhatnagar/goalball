@@ -1,16 +1,11 @@
 # Enable mod_rewrite
 RewriteEngine On
 
-# Redirect "event?slug=xxx" to "event/xxx" only if it's not already in clean format
-RewriteCond %{QUERY_STRING} ^slug=([^&]+)$
-RewriteCond %{REQUEST_URI} !^/event/ [NC]   # Check if the URI is NOT already in the clean format
-RewriteRule ^event$ /event/%1? [L,R=301]
-
-# Redirect requests without .php (this part may be unrelated to the current issue, but you can keep it)
+# Remove .php extension from URL
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php [L]
 
-# Optional: Redirect requests with .php to clean URLs (removes .php from URL if present)
-RewriteCond %{THE_REQUEST} "^[^ ]+ /(.+)\.php([#?][^ ]*)? HTTP/"
-RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+# Optional: If you want to redirect any .php URLs to the clean version without the extension, uncomment the following lines
+# RewriteCond %{THE_REQUEST} "^[^ ]+ /(.+)\.php([#?][^ ]*)? HTTP/"
+# RewriteRule ^(.+)\.php$ /$1 [R=301,L]
