@@ -17,15 +17,32 @@
     </div>
 </section>
 
+<!-- Section 1 -->
 <section>
     <div class="w-100 pt-110 pb-110 position-relative">
         <div class="container">
             <div class="gallery-wrap v3 text-center position-relative w-100">
-                <div class="row mrg30" id="gallery-container">
-                    <!-- Images will be loaded here -->
+                <div class="row mrg30" id="gallery-container-1">
+                    <!-- Images for Section 1 will be loaded here -->
                 </div>
                 <div class="text-center mt-4">
-                    <button id="load-more" class="btn btn-primary">Show More</button>
+                    <button id="load-more-1" class="btn btn-primary">Show More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2 -->
+<section>
+    <div class="w-100 pt-110 pb-110 position-relative">
+        <div class="container">
+            <div class="gallery-wrap v3 text-center position-relative w-100">
+                <div class="row mrg30" id="gallery-container-2">
+                    <!-- Images for Section 2 will be loaded here -->
+                </div>
+                <div class="text-center mt-4">
+                    <button id="load-more-2" class="btn btn-primary">Show More</button>
                 </div>
             </div>
         </div>
@@ -33,14 +50,15 @@
 </section>
 
 <?php include "layouts/footer.php"; ?>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function() {
-    const folder = 'third';
-    let start = 0;
-    const limit = 9;
+    // Reusable function to load images
+    function loadImages(folder, targetDiv, loadMoreButton) {
+        let start = $(targetDiv).children().length; // Get the current number of images in the target div
+        const limit = 9;
 
-    function loadImages() {
         $.ajax({
             url: 'parts/scan_images.php',
             method: 'POST',
@@ -48,7 +66,7 @@ $(document).ready(function() {
             success: function(response) {
                 if (response.images && response.images.length > 0) {
                     response.images.forEach(function(imageName, index) {
-                        const imageUrl = "./uploads/"+folder + '/' + imageName;
+                        const imageUrl = "./uploads/" + folder + '/' + imageName;
                         const title = 'Gallery Image ' + (start + index + 1);
 
                         const html = `
@@ -62,18 +80,19 @@ $(document).ready(function() {
                                 </div>
                             </div>
                         `;
-                        $('#gallery-container').append(html);
+                        $(targetDiv).append(html);
                     });
 
-                    start += limit;
+                    start += response.images.length;
 
+                    // Hide the "Load More" button if all images are loaded
                     if (start >= response.total) {
-                        $('#load-more').hide();
+                        $(loadMoreButton).hide();
                     }
                 } else {
-                    $('#load-more').hide();
+                    $(loadMoreButton).hide();
                     if (start === 0) {
-                        $('#gallery-container').html('<p>No images found.</p>');
+                        $(targetDiv).html('<p>No images found.</p>');
                     }
                 }
             },
@@ -83,12 +102,18 @@ $(document).ready(function() {
         });
     }
 
-    // Initial load
-    loadImages();
+    // Initial load for all sections
+    loadImages('third', '#gallery-container-1', '#load-more-1');
+    loadImages('fourth', '#gallery-container-2', '#load-more-2');
 
-    // Load more on button click
-    $('#load-more').on('click', function() {
-        loadImages();
+    // Load more on button click for Section 1
+    $('#load-more-1').on('click', function() {
+        loadImages('third', '#gallery-container-1', '#load-more-1');
+    });
+
+    // Load more on button click for Section 2
+    $('#load-more-2').on('click', function() {
+        loadImages('fourth', '#gallery-container-2', '#load-more-2');
     });
 });
 </script>

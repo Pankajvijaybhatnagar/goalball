@@ -124,3 +124,59 @@ $row = $res->fetch_assoc();
 <?php
 include 'layouts/footer.php';
 ?>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Reusable function to load images
+    function loadImages(folder, targetDiv, loadMoreButton) {
+        let start = $(targetDiv).children().length; // Get the current number of images in the target div
+        const limit = 9;
+
+        $.ajax({
+            url: 'parts/scan_images.php',
+            method: 'POST',
+            data: { folder, start, limit },
+            success: function(response) {
+                if (response.images && response.images.length > 0) {
+                    response.images.forEach(function(imageName, index) {
+                        const imageUrl = "./uploads/" + folder + '/' + imageName;
+                        const title = 'Gallery Image ' + (start + index + 1);
+
+                        const html = `
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="gallery-box v3 brd-rd10 position-relative overflow-hidden w-100">
+                                    <img class="img-fluid w-100" src="${imageUrl}" alt="${title}">
+                                    <div class="gallery-info position-absolute">
+                                        <h3 class="mb-0">Goalball India</h3>
+                                        <a class="d-inline-block" href="${imageUrl}" data-fancybox="gallery"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        $(targetDiv).append(html);
+                    });
+
+                    start += response.images.length;
+
+                    // Hide the "Load More" button if all images are loaded
+                    if (start >= response.total) {
+                        $(loadMoreButton).hide();
+                    }
+                } else {
+                    $(loadMoreButton).hide();
+                    if (start === 0) {
+                        $(targetDiv).html('<p>No images found.</p>');
+                    }
+                }
+            },
+            error: function() {
+                alert('Failed to load images.');
+            }
+        });
+    }
+
+   
+    
+});
+</script>
