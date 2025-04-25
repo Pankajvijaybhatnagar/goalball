@@ -22,7 +22,7 @@ include "layouts/header.php";
     </div>
 </section>
 
-<section id="donation-section" class="donation-section">
+<section id="donation-section" class="donation-section my-3">
     <div class="container">
         <h2>Make a Donation</h2>
         <p>Support the Goalball Federation of India by making a donation. Please use the following bank account details for transferring your donation.</p>

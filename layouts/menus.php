@@ -5,7 +5,7 @@ $menus = [
         "submenus" => [],
     ],
     "About" => [
-        "link" => "index",
+        "link" => "about",
         "submenus" => [
             "Mission & Vision" => [
                 "link" => "about#vision-mission",
