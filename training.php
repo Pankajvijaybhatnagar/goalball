@@ -1,38 +1,38 @@
 <?php
 include "layouts/header.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Training in Goalball</title>
     <style>
-        .container {
-            max-width: 960px;
-            margin: auto;
-            padding-top:10px;
-        }
-        h1, h2 {
-            color: #003366;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 6px;
-        }
-        .emoji {
-            font-size: 1.2em;
-        }
+       .section{
+        margin:40px auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        padding:30px 13px
+       }
     </style>
 </head>
-<body>
+<section>
+    <div class="w-100 pt-100 black-layer opc5 pb-80 position-relative">
+        <div class="fixed-bg" style="background-image: url(assets/images/pag-top-bg.jpg);"></div>
+        <div class="container">
+            <div class="page-title-wrap text-center w-100">
+                <div class="page-title-inner d-inline-block">
+                    <h1 class="mb-0">Training in Goalball</h1>
+                    <!-- <ol class="breadcrumb mb-0 justify-content-center">
+                        <li class="breadcrumb-item"><a href="index" title="">Home</a></li>
+                        <li class="breadcrumb-item active">About Us</li>
+                    </ol> -->
+                </div>
+            </div><!-- Page Title Wrap -->
+        </div>
+    </div>
+</section>
+
     <div class="container">
         <h1>Training in Goalball</h1>
-        <img width='75%'src="goalball-07.jpg" alt="Goalball training image">
+        <img width='100%'src="image.png" alt="Goalball training image">
 
         <div class="section">
             <h2>Introduction</h2>
@@ -86,8 +86,6 @@ include "layouts/header.php";
             <p>Goalball training is not just about fitness—it’s a discipline of trust, awareness, and precise execution. Whether you're a beginner or elite athlete, consistent and structured training is key to excelling in this dynamic Paralympic sport.</p>
         </div>
     </div>
-</body>
-</html>
 
 <?php
 include 'layouts/footer.php';
