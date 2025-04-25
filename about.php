@@ -30,7 +30,7 @@ include "layouts/header.php";
 
 <section>
     <div class="w-100 pt-100 gray-layer opc95 pb-100 position-relative">
-        <div class="fixed-bg" style="background-image: url(assets/images/parallax-bg6.jpg);"></div>
+        <div class="fixed-bg" style="background-image: url(assets/images/parallax-b.jpg);"></div>
         <div class="container">
             <div class="about-wrap2 position-relative w-100">
                 <div class="row mrg30">
@@ -71,10 +71,10 @@ include "layouts/header.php";
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-lg-6">
                                     <div class="about-gal-img brd-rd10 overflow-hidden position-relative w-100">
-                                        <a class="about-play-btn spinner scndry-clr rounded-circle"
+                                        <!-- <a class="about-play-btn spinner scndry-clr rounded-circle"
                                             href="https://player.vimeo.com/video/183609522" data-fancybox title="">
                                             <i class="fas fa-play-circle"></i>
-                                        </a>
+                                        </a> -->
                                         <img class="img-fluid w-100" src="assets/images/resources/about-gal-img1-4.jpg"
                                             alt="About Gallery Image 4">
                                     </div>
@@ -112,7 +112,7 @@ include "layouts/header.php";
 
 
 <section >
-    <div id="vision-mission" class=""></div>
+    <div id="vision-mission"x class=""></div>
     <div class="container my-3">
         <h5>Mission Statement</h5>
         <p>To empower visually impaired athletes through structured training, support, and
