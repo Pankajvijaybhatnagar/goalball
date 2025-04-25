@@ -8,15 +8,15 @@ $menus = [
         "link" => "index",
         "submenus" => [
             "Mission & Vision" => [
-                "link" => "index",
+                "link" => "about#vision-mission",
                 "description" => "Learn about our mission and vision for the future.",
             ],
             "History" => [
-                "link" => "index",
+                "link" => "about#history",
                 "description" => "Discover the history of Goalball and its evolution.",
             ],
             "Leadership Team" => [
-                "link" => "index",
+                "link" => "about#team",
                 "description" => "Meet our dedicated leadership team.",
             ],
         ],
