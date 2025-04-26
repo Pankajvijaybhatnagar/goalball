@@ -46,7 +46,7 @@ $res=$conn->query($sql);
                         <div class="news-box2 brd-rd10 position-relative overflow-hidden w-100">
                             <div class="news-img2 position-relative overflow-hidden w-100">
                                 <a href="event?e=<?php echo $rows['slug'] ?>" title=""><img class="img-fluid w-100"
-                                        src="assets/images/resources/<?php echo $rows['featured_image'] ?>" title="News Image 1"></a>
+                                        src="assets/images/events/<?php echo $rows['featured_image'] ?>" title="<?php echo $rows['title'] ?>"></a>
                             </div>
                             <div class="news-info2 brd-rd10 bg-color6 position-relative w-100">
                                

@@ -19,8 +19,9 @@
 
 <!-- Section 1 -->
 <section>
-    <div class="w-100 pt-110 pb-110 position-relative">
+    <div class="w-100 pt-110 pb-50 position-relative">
         <div class="container">
+            <h4 class="mb-3">1st National Goalball Championship 2017</h4>
             <div class="gallery-wrap v3 text-center position-relative w-100">
                 <div class="row mrg30" id="gallery-container-1">
                     <!-- Images for Section 1 will be loaded here -->
@@ -35,8 +36,9 @@
 
 <!-- Section 2 -->
 <section>
-    <div class="w-100 pt-110 pb-110 position-relative">
+    <div class="w-100 pt-110 pb-50 position-relative">
         <div class="container">
+            <h4 class="mb-3">2nd National Goalball Championship 2022-23</h4>
             <div class="gallery-wrap v3 text-center position-relative w-100">
                 <div class="row mrg30" id="gallery-container-2">
                     <!-- Images for Section 2 will be loaded here -->
@@ -48,6 +50,28 @@
         </div>
     </div>
 </section>
+<!-- Section 3 -->
+<section>
+    <div class="w-100 pt-110 pb-110 position-relative">
+        <div class="container">
+            <h4 class="mb-3">3rd National Goalball Championship 2023-24</h4>
+
+            <div class="gallery-wrap v3 text-center position-relative w-100">
+                <div class="row mrg30" id="gallery-container-3">
+                    <!-- Images for Section 2 will be loaded here -->
+                </div>
+                <div class="text-center mt-4">
+                    <button id="load-more-3" class="btn btn-primary">Show More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
 
 <?php include "layouts/footer.php"; ?>
 
@@ -62,7 +86,11 @@ $(document).ready(function() {
         $.ajax({
             url: 'parts/scan_images.php',
             method: 'POST',
-            data: { folder, start, limit },
+            data: {
+                folder,
+                start,
+                limit
+            },
             success: function(response) {
                 if (response.images && response.images.length > 0) {
                     response.images.forEach(function(imageName, index) {
@@ -103,17 +131,24 @@ $(document).ready(function() {
     }
 
     // Initial load for all sections
-    loadImages('third', '#gallery-container-1', '#load-more-1');
-    loadImages('fourth', '#gallery-container-2', '#load-more-2');
+    loadImages('first', '#gallery-container-1', '#load-more-1');
+    loadImages('second', '#gallery-container-2', '#load-more-2');
+    loadImages('third', '#gallery-container-3', '#load-more-3');
 
     // Load more on button click for Section 1
     $('#load-more-1').on('click', function() {
-        loadImages('third', '#gallery-container-1', '#load-more-1');
+        loadImages('first', '#gallery-container-1', '#load-more-1');
+
     });
 
     // Load more on button click for Section 2
     $('#load-more-2').on('click', function() {
-        loadImages('fourth', '#gallery-container-2', '#load-more-2');
+        loadImages('second', '#gallery-container-2', '#load-more-2');
+
+    });
+    $('#load-more-3').on('click', function() {
+    loadImages('third', '#gallery-container-3', '#load-more-3');
+        
     });
 });
 </script>

@@ -21,7 +21,7 @@ $row = $res->fetch_assoc();
         <div class="container">
             <div class="page-title-wrap text-center w-100">
                 <div class="page-title-inner d-inline-block">
-                    <h1 class="mb-0"><?php echo  $slug ?? "Not Found"  ?> </h1>
+                    <h1 class="mb-0"><?php echo  $row['title'] ?? "Not Found"  ?> </h1>
                     <ol class="breadcrumb mb-0 justify-content-center">
                         <li class="breadcrumb-item"><a href="index" title="">Home</a></li>
                         <li class="breadcrumb-item ">Events</li>
@@ -43,8 +43,7 @@ $row = $res->fetch_assoc();
                         <div class="post-detail w-100">
                             <div class="post-feat-img serv-detail-img brd-rd10 position-relative overflow-hidden w-100">
                                 <img class="img-fluid w-100"
-                                    src="uploads/<?php echo $row['image_folder_name'] ?>/<?php echo $row['featured_image'] ?>"
-                                    alt="GFI">
+                                    src="assets/images/events/<?php echo $row['featured_image'] ?>" alt="GFI">
                                 <span class="brd-rd10 thm-bg serv-post-date position-absolute"></span>
                                 <span class="serv-post-authr position-absolute"><i class="fas fa-ball thm-clr"></i><a
                                         href="javasctipt:void()" title="">Goalball Federation of India</a></span>
@@ -66,6 +65,32 @@ $row = $res->fetch_assoc();
                                 <p class="mb-0"> <?php echo $row['place'] ?>
                                 </p>
                             </blockquote>
+                            <?php
+
+                            if($row['image_folder_name']!=null) {
+                                ?>
+
+                            <section>
+                                <div class="w-100 pt-50 position-relative">
+                                    <div class="container">
+                                        <h4 class="mb-3">Gallery</h4>
+                                        <div class="gallery-wrap v3 text-center position-relative w-100">
+                                            <div class="row mrg30" id="gallery-container-1">
+                                                <!-- Images for Section 1 will be loaded here -->
+                                            </div>
+                                            <div class="text-center mt-4">
+                                                <button id="load-more-1" class="btn btn-primary">Show More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                                <?php
+                            }
+
+                            ?>
 
                         </div>
                     </div>
@@ -80,7 +105,7 @@ $row = $res->fetch_assoc();
                                         $sql = "SELECT * FROM `events`";
                                         $res=$conn->query($sql);
                                         ?>
-                                         <?php 
+                                    <?php 
                                         if($res->num_rows>0){
 
                                         while($rows = $res->fetch_assoc()){
@@ -90,14 +115,14 @@ $row = $res->fetch_assoc();
                                             <img class="img-fluid" width="80px" src="assets/images/logo2.png"
                                                 alt="Mini Product Image 1"></a>
                                         <div class="mini-post-info">
-                                            <h5 class="mb-0"><a href="product-detail.html" title=""><?php echo strtoupper( $rows['title'])  ?></a></h5>
-                                            <span
-                                                class="price scndry-clr d-block"><?php echo $rows['place'] ?></span>
-                                                <a href="event?e=<?php echo $rows['slug'] ?>" title="">Read more -></a>
+                                            <h5 class="mb-0"><a href="product-detail.html"
+                                                    title=""><?php echo strtoupper( $rows['title'])  ?></a></h5>
+                                            <span class="price scndry-clr d-block"><?php echo $rows['place'] ?></span>
+                                            <a href="event?e=<?php echo $rows['slug'] ?>" title="">Read more -></a>
                                         </div>
                                     </div>
                                     <?php }}  ?>
-                                    
+
 
                                 </div>
                             </div>
@@ -110,7 +135,7 @@ $row = $res->fetch_assoc();
     </div>
 </section>
 
-<sect
+
 
 
 
@@ -125,8 +150,11 @@ $row = $res->fetch_assoc();
 include 'layouts/footer.php';
 ?>
 
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+var currentFolder = '<?php echo $row['image_folder_name']  ?>';
 $(document).ready(function() {
     // Reusable function to load images
     function loadImages(folder, targetDiv, loadMoreButton) {
@@ -136,7 +164,11 @@ $(document).ready(function() {
         $.ajax({
             url: 'parts/scan_images.php',
             method: 'POST',
-            data: { folder, start, limit },
+            data: {
+                folder,
+                start,
+                limit
+            },
             success: function(response) {
                 if (response.images && response.images.length > 0) {
                     response.images.forEach(function(imageName, index) {
@@ -176,7 +208,13 @@ $(document).ready(function() {
         });
     }
 
-   
-    
+    loadImages(currentFolder, '#gallery-container-1', '#load-more-1');
+
+    $('#load-more-1').on('click', function() {
+        loadImages(currentFolder, '#gallery-container-1', '#load-more-1');
+
+    });
+    console.log(currentFolder)
+
 });
 </script>
