@@ -21,7 +21,7 @@
 <section>
     <div class="w-100 pt-110 pb-50 position-relative">
         <div class="container">
-            <h4 class="mb-3">1st National Goalball Championship 2017</h4>
+            <h2 class="mb-3">1st National Goalball Championship 2017</h2>
             <div class="gallery-wrap v3 text-center position-relative w-100">
                 <div class="row mrg30" id="gallery-container-1">
                     <!-- Images for Section 1 will be loaded here -->
@@ -38,7 +38,7 @@
 <section>
     <div class="w-100 pt-110 pb-50 position-relative">
         <div class="container">
-            <h4 class="mb-3">2nd National Goalball Championship 2022-23</h4>
+            <h2 class="mb-3">2nd National Goalball Championship 2022-23</h2>
             <div class="gallery-wrap v3 text-center position-relative w-100">
                 <div class="row mrg30" id="gallery-container-2">
                     <!-- Images for Section 2 will be loaded here -->
@@ -54,7 +54,7 @@
 <section>
     <div class="w-100 pt-110 pb-110 position-relative">
         <div class="container">
-            <h4 class="mb-3">3rd National Goalball Championship 2023-24</h4>
+            <h2 class="mb-3">3rd National Goalball Championship 2023-24</h2>
 
             <div class="gallery-wrap v3 text-center position-relative w-100">
                 <div class="row mrg30" id="gallery-container-3">

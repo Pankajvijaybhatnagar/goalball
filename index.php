@@ -137,8 +137,8 @@ include "layouts/header.php";
                                 </p>
                             </div>
                             <div class="sec-title-btns d-inline-flex flex-wrap align-items-center">
-                                <a class="simple-link thm-clr d-inline-block" href="#" title="">More Programs<i class="fas fa-caret-right"></i></a>
-                                <a class="thm-btn v2 thm-bg brd-rd5 d-inline-block position-relative overflow-hidden" href="#" title="">Join Us</a>
+                                <a class="simple-link thm-clr d-inline-block" href="events" title="">More Programs<i class="fas fa-caret-right"></i></a>
+                                <a class="thm-btn v2 thm-bg brd-rd5 d-inline-block position-relative overflow-hidden" href="support" title="">Join Us</a>
                             </div>
                         </div><!-- Sec Title -->
                         <div class="serv-wrap2 res-row position-relative w-100">
@@ -158,10 +158,10 @@ include "layouts/header.php";
                                     <div class="serv-box2 v2 position-relative w-100">
                                         <div class="serv-img2 brd-rd10 position-relative overflow-hidden w-100">
                                             <img class="img-fluid w-100" src="assets/images/resources/serv-img2-2.jpg" alt="National Tournaments">
-                                            <a class="position-absolute" href="" title=""><i class="fas fa-plus"></i></a>
+                                            <a class="position-absolute" href="event?e=2nd-national-goalball-championship-2022-23" title=""><i class="fas fa-plus"></i></a>
                                         </div>
                                         <div class="serv-info2 w-100 position-absolute">
-                                            <h3 class="mb-0"><a href="" title="">National Goalball Tournaments</a></h3>
+                                            <h3 class="mb-0"><a href="" title="">2<sup>nd</sup> Goalball National Championship</a></h3>
                                         </div>
                                     </div>
                                 </div>
