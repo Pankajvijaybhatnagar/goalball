@@ -331,7 +331,7 @@ include "layouts/header.php";
                             <div class="col-md-12 col-sm-12 col-lg-6">
                                 <div class="video-box-wrap z1 d-flex flex-wrap justify-content-center align-items-center position-relative w-100" style="background-image: url(assets/images/video-bg.jpg);">
                                     <div class="video-box position-relative d-inline-block">
-                                        <a class="position-absolute spinner" href="https://player.vimeo.com/" data-fancybox title=""><i class="fas fa-play"></i></a>
+                                        <!-- <a class="position-absolute spinner" href="https://player.vimeo.com/" data-fancybox title=""><i class="fas fa-play"></i></a> -->
                                        
                                         <!-- <span class="d-block thm-clr">Work Schedule</span>
                                         <h2 class="mb-0">Should I <br> Become A Trainer?</h2>
@@ -349,7 +349,7 @@ include "layouts/header.php";
                                         <p class="mb-0">All athletes compete together on the same team but must wear eyeshades. This ensures a level-playing field for all team members.</p>
                                         <p class="mb-0">GFI Goalball is conducting research to create a classification system specific to goalball. This is a requirement for being part of the Paralympic programme.</p>
                                         <p class="mb-0">More information about classification, how it works, and what athletes can expect from the current process can be found below:</p>
-                                        <a class="thm-btn thm-bg brd-rd5 d-inline-block position-relative overflow-hidden mt-3" href="javascript:void(0);" title="">More on Classification</a>
+                                        <a class="thm-btn thm-bg brd-rd5 d-inline-block position-relative overflow-hidden mt-3" href="play" title="">More on Classification</a>
                                     </div>
                                 </div>
                             </div>
@@ -361,7 +361,7 @@ include "layouts/header.php";
             <section>
                 
             </section>
-            <section>
+            <!-- <section>
                 <div class="w-100 pt-100 white-layer opc97 pb-100 position-relative">
                     <div class="fixed-bg" style="background-image: url(assets/images/parallax-bg4.jpg);"></div>
                     <div class="container">
@@ -375,7 +375,7 @@ include "layouts/header.php";
                                             <p class="mb-0">Stay updated with the latest insights, news, and developments in Goalball.</p>
                                             <a class="thm-btn thm-bg brd-rd5 d-inline-block position-relative overflow-hidden" href="#" title="">More Blogs</a>
                                         </div>
-                                    </div><!-- Side Title -->
+                                    </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-lg-8">
                                     <div class="news-wrap3 position-relative w-100">
@@ -413,14 +413,14 @@ include "layouts/header.php";
                                                 </div>
                                             </div>
                                         </div>
-                                    </div><!-- News Wrap 3 -->
+                                    </div><
                                 </div>
                             </div>
-                        </div><!-- News with Side Title Wrap -->
+                        </div>
                     </div>
                 </div>
             </section>
-            
+             -->
 <?php
 include 'layouts/footer.php';
 ?>
