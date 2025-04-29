@@ -161,7 +161,7 @@ include "layouts/header.php";
                                             <a class="position-absolute" href="event?e=2nd-national-goalball-championship-2022-23" title=""><i class="fas fa-plus"></i></a>
                                         </div>
                                         <div class="serv-info2 w-100 position-absolute">
-                                            <h3 class="mb-0"><a href="" title="">2<sup>nd</sup> Goalball National Championship</a></h3>
+                                            <h3 class="mb-0"><a href="event?e=2nd-national-goalball-championship-2022-23" title="">2<sup>nd</sup> Goalball National Championship</a></h3>
                                         </div>
                                     </div>
                                 </div>
