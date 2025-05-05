@@ -67,6 +67,23 @@
         </div>
     </div>
 </section>
+<!-- Section 4 -->
+<section>
+    <div class="w-100 pt-110 pb-110 position-relative">
+        <div class="container">
+            <h2 class="mb-3">4rd National Goalball Championship 2023-24</h2>
+
+            <div class="gallery-wrap v3 text-center position-relative w-100">
+                <div class="row mrg30" id="gallery-container-4">
+                    <!-- Images for Section 2 will be loaded here -->
+                </div>
+                <div class="text-center mt-4">
+                    <button id="load-more-4" class="btn btn-primary">Show More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -134,6 +151,7 @@ $(document).ready(function() {
     loadImages('first', '#gallery-container-1', '#load-more-1');
     loadImages('second', '#gallery-container-2', '#load-more-2');
     loadImages('third', '#gallery-container-3', '#load-more-3');
+    loadImages('forth', '#gallery-container-4', '#load-more-4');
 
     // Load more on button click for Section 1
     $('#load-more-1').on('click', function() {
@@ -148,6 +166,10 @@ $(document).ready(function() {
     });
     $('#load-more-3').on('click', function() {
     loadImages('third', '#gallery-container-3', '#load-more-3');
+        
+    });
+    $('#load-more-4').on('click', function() {
+    loadImages('forth', '#gallery-container-4', '#load-more-4');
         
     });
 });
