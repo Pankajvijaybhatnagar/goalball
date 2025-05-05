@@ -1,6 +1,15 @@
+<head>
+    <title>Goalball Federation of India (GFI) – Promoting Goalball for the Visually Impaired</title>
+    <meta name="description" content="The Goalball Federation of India (GFI) is dedicated to promoting and organizing the sport of Goalball for blind and visually impaired athletes across India. Join us to support inclusive sports and empower athletes nationwide.">
+    <meta name="keywords" content="Goalball India, Goalball Federation of India, GFI, sports for visually impaired, blind sports India, inclusive sports, para sports, goalball teams India, visually impaired athletes, Goalball tournaments India">
+</head>
+
+
+
 <?php
 include "layouts/header.php";
 ?>
+
 			<!-- Sn Main Slider -->
             <section class="sn-main-slider">
                 <div class="sn-main-slider-carousel owl-carousel">
@@ -20,7 +29,7 @@ include "layouts/header.php";
                                             Join us to develop your skills and compete at national and international levels.
                                         </div>
                                         <div class="btns-box">
-                                            <a class="thm-btn thm-bg brd-rd5 d-inline-block position-relative overflow-hidden " color="white" href="contact.html" title="">GET STARTED</a>
+                                            <a class="thm-btn thm-bg brd-rd5 d-inline-block position-relative overflow-hidden " color="white" href="contact" title="">GET STARTED</a>
                                         </div>
                                     </div>
                                 </div>
@@ -54,7 +63,7 @@ include "layouts/header.php";
                                             With expert coaching and structured sessions, you can enhance your performance and participate in top-level competitions.
                                         </div>
                                         <div class="btns-box">
-                                            <a class="thm-btn thm-bg brd-rd5 d-inline-block position-relative overflow-hidden" href="training.html" title="">JOIN TRAINING</a>
+                                            <a class="thm-btn thm-bg brd-rd5 d-inline-block position-relative overflow-hidden" href="support" title="">JOIN TRAINING</a>
                                         </div>
                                     </div>
                                 </div>

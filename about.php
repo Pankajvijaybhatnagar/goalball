@@ -1,3 +1,10 @@
+<head>
+  <title>About Goalball Federation of India (GFI) – Empowering Visually Impaired Athletes</title>
+  <meta name="description" content="Learn about the Goalball Federation of India (GFI), dedicated to promoting and organizing Goalball for blind and visually impaired athletes across India. Discover our mission to foster inclusive sports and empower athletes nationwide.">
+  <meta name="keywords" content="Goalball Federation of India, GFI, Goalball India, sports for visually impaired, blind sports India, inclusive sports, para sports, Goalball tournaments India, visually impaired athletes, Goalball development India">
+</head>
+
+
 <?php
 include "layouts/header.php";
 ?>
