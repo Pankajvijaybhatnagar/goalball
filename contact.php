@@ -1,7 +1,9 @@
 <head>
-  <title>Contact Goalball Federation of India (GFI) – Reach Out to Promote Inclusive Sports</title>
-  <meta name="description" content="Get in touch with the Goalball Federation of India (GFI) to support and promote Goalball for blind and visually impaired athletes across India. Connect with us to foster inclusive sports and empower athletes nationwide.">
-  <meta name="keywords" content="Contact Goalball Federation of India, GFI contact, Goalball India contact, sports for visually impaired, blind sports India, inclusive sports, para sports, Goalball tournaments India, visually impaired athletes, Goalball development India">
+    <title>Contact Goalball Federation of India (GFI) – Reach Out to Promote Inclusive Sports</title>
+    <meta name="description"
+        content="Get in touch with the Goalball Federation of India (GFI) to support and promote Goalball for blind and visually impaired athletes across India. Connect with us to foster inclusive sports and empower athletes nationwide.">
+    <meta name="keywords"
+        content="Contact Goalball Federation of India, GFI contact, Goalball India contact, sports for visually impaired, blind sports India, inclusive sports, para sports, Goalball tournaments India, visually impaired athletes, Goalball development India">
 </head>
 
 
@@ -143,9 +145,10 @@ include "layouts/header.php";
 
                     <!-- Submit Button -->
                     <div class="btn-box w-100">
-                        <button class="thm-btn scndry-bg brd-rd10 position-relative overflow-hidden" type="submit"
+                        <button class="thm-bt scndry-bg brd-rd10 position-relative overflow-hidden" type="submit"
                             id="submit">Submit Inquiry</button>
                     </div>
+                    <div class="response" id="response" style="display: none;"></div>
                 </form>
 
 
@@ -165,6 +168,74 @@ include "layouts/header.php";
 
 
 
+
 <?php
 include 'layouts/footer.php';
 ?>
+
+<script>
+function handleFormSubmission(formId, resultId) {
+    const form = document.getElementById(formId);
+    const result = document.getElementById(resultId);
+    console.log("formId", resultId);
+
+    if (!form || !result) {
+        console.error("Invalid form ID or result ID.");
+        return;
+    }
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        formData.append("access_key", "a53e358d-7c90-43d4-a9fc-2e76ae071b71");
+        formData.append("subject", "Contact Form Submission");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        result.innerHTML = "Please wait...";
+        result.style.display = "block";
+
+        fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: json,
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status === 200) {
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-green-500");
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-red-500");
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+                result.classList.remove("text-gray-500");
+                result.classList.add("text-red-500");
+            })
+            .finally(() => {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 5000);
+            });
+    });
+}
+// Call the function with the form ID and result ID
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOMContentLoaded");
+    handleFormSubmission("contact-us-form", "response");
+});
+</script>
