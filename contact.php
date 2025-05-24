@@ -225,7 +225,7 @@ function handleFormSubmission(formId, resultId) {
                 result.classList.add("text-red-500");
             })
             .finally(() => {
-                form.reset();
+                form.reset();   
                 setTimeout(() => {
                     result.style.display = "none";
                 }, 5000);

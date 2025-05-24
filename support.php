@@ -121,7 +121,7 @@ h3 {
                             <div class="form-group">
                                 <label for="disability-certificate">Upload Disability Certificate</label>
                                 <input type="file" class="form-control" id="disability-certificate"
-                                    name="disability_certificate" accept=".pdf,.jpg" required>
+                                    name="disability_certificate" accept=".pdf,.jpg,.png" required>
                             </div>
                             <div class="form-group">
                                 <label for="passport-photo">Upload Passport-size Photo</label>
@@ -349,30 +349,67 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+
+
+
+    async function submitFormData(json, form, result) {
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: json,
+            });
+
+            const responseData = await response.json();
+
+            if (response.ok) {
+                result.innerHTML = responseData.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("text-green-500");
+
+                return {
+                    success: true,
+                    message: responseData.message
+                };
+            } else {
+                result.innerHTML = responseData.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("text-red-500");
+
+                return {
+                    success: false,
+                    error: responseData.message
+                };
+            }
+        } catch (error) {
+            console.error("Fetch Error:", error);
+
+            result.innerHTML = "Something went wrong!";
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-red-500");
+
+            return {
+                success: false,
+                error: "Network or server error occurred."
+            };
+        } finally {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 5000);
+        }
+    }
+
+
+
+
     function submitForm(form, formType) {
         const formData = new FormData(form);
-        const key = "a53e358d-7c90-43d4-a9fc-2e76ae071b71a53e358d-7c90-43d4-a9fc-2e76ae071b71"
-        // formData.append("access_key", key); // Replace this with your Web3Forms Access Key
-        formData.append("subject", "New submission from Goalball Federation Website");
-        formData.append("from_name", formType); // Optional: form type identifier
-
-        fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                body: formData
-            })
-            .then(async (response) => {
-                const result = await response.json();
-                if (response.status === 200) {
-                    alert(formType + " submitted successfully!\n" + result.message);
-                    form.reset();
-                } else {
-                    alert("Submission failed: " + result.message);
-                }
-            })
-            .catch((error) => {
-                console.error("Web3Forms error:", error);
-                alert("Something went wrong. Please try again.");
-            });
+        const object = Object.fromEntries(formData);
+        console.table(object);
     }
 
     toggleForms('athlete-registration-form')
